@@ -17,7 +17,7 @@ h2{
 ul li{
     display:inline-block;
     position: relative;
-    float:left;
+    
 }
 ul li a{
     color:brown;
