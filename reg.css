@@ -1,0 +1,28 @@
+body {
+    background-color: aquamarine;
+}
+h1{
+    color: navy;
+    margin-left: 580px;
+}
+form{
+    margin-left: 520px;
+}
+input{
+    background-size: 100%;
+}
+#Address {
+    width: 400px;
+
+}
+#Email {
+    width: 420px;
+
+}
+#Occupation
+{
+    width: 300px;
+}
+form{
+    display: table
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BODY MASS INDEX</title>
+        <link rel="stylesheet" href="bmi.css">
+        
+        <script>
+            function calculateBmi() {
+            var weight = document.bmi.weight.value
+            var height = document.bmi.height.value
+            if(weight > 0 && height > 0){	
+            var Bmi = weight/(height/100*height/100)
+            document.bmi.bmi.value = Bmi
+            if(Bmi < 18.5){
+            document.bmi.meaning.value = "Dear"+" "+"you are too thin."+"Eat Healthy Food"
+            }
+            if(Bmi > 18.5 && Bmi < 25){
+            document.bmi.meaning.value = "Dear"+" "+"you are healthy."+"Maintain Healthy Diet"
+            }
+            if(Bmi > 25){
+            document.bmi.meaning.value = "Dear"+" "+"you are overweight."+"Do Exercise"
+            }
+            }
+            else{
+            alert("Please Fill in everything correctly")
+            }
+            }
+            </script>
+             <img src="images.jfif">
+            <h2>BODY MASS INDEX CALCULATOR---></h2>
+    </head>
+    <body>
+        
+        <form name="bmi">
+            <b>Your Weight(kg):</b> <input type="text" name="weight" size="10"><br><br>
+            <b>Your Height(cm):</b> <input type="text" name="height" size="10"><br><br>
+            <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br><br>
+            <b>Your BMI: </b><input type="text" name="bmi" size="10"><br><br>
+            <b> Means:</b><input type="text" name="meaning" size="25"><br><br>
+            <input type="reset" value="Reset" />
+            </form>
+        </body>
+</html>
